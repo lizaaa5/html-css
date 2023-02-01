@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eaque 
+        ipsum doloribus adipisci vel natus deleniti temporibus tempore sed 
+        delectus aperiam, culpa dicta facilis alias libero soluta quidem rerum 
+        numquam!</p>
+    
+        <ul>
+            <li><a href="paginas-extra/pag001.html" target="frame">Primeira página</a></li>
+            <li><a href="paginas-extra/pag002.html" target="frame">Segunda página</a></li>
+            <li><a href="paginas-extra/pag003.html" target="frame">Terceira página</a></li>
+        </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore incidunt 
+        rem, vel eveniet blanditiis assumenda atque consectetur facere impedit 
+        ratione distinctio a consequatur asperiores, veritatis doloremque, corporis 
+        eius modi. Officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Harum quis reiciendis voluptate quod blanditiis nulla, natus consectetur. 
+        Voluptate, culpa neque? Necessitatibus cum expedita error dolorem possimus 
+        quis repellendus eum pariatur.</p>
+
+        <!--<iframe id="tela" name="frame" src="paginas-extra/pag001.html">-->
+        <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore incidunt 
+                rem, vel eveniet blanditiis assumenda atque consectetur facere impedit 
+                ratione distinctio a consequatur asperiores, veritatis doloremque, corporis 
+                eius modi. Officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Harum quis reiciendis voluptate quod blanditiis nulla, natus consectetur. 
+                Voluptate, culpa neque? Necessitatibus cum expedita error dolorem possimus 
+                quis repellendus eum pariatur.</p><img src='imagens/images.png'>">
+                <p>Infelizmente o seu navegador não é compatível com isso.</p>
+        </iframe>
+</body>
+</html>

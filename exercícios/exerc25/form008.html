@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <h1>Exemplo de formularios</h1>
+   <form action="cadastro.php"method="post" autocomplete="on"></form>
+   <p>
+    <label for="inum1">número1</label>
+    <input type="number" name="num1" id="inum1" min="0" max="50" required oninput="isoma.innerHTML=Number(inum1.value)+Number(inum2.value)">
+  
+</p>
+
+<p>
+    <label for="inum2">Número 2</label>
+    <input type="number" name="num2" id="inum2" min="8" max="50" required oninput="isoma.innerHTML=(inum.value)+Number(inum2.value)">
+</p>
+<P>
+    <label for="isoma">Soma</label>
+    <output name="soma" id="isoma">0</output>
+</P>
+<p><input type="submit" value="Enviar"></p>
+<p><input type="reset" value="Limpar"></p>
+
+</body>
+</html>
